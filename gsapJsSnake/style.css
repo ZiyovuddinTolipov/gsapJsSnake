@@ -1,0 +1,51 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    overflow: hidden;
+}
+.cursor{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.cursor .circle{
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+   
+    border-radius: 50%;
+}
+.cursor .circle{
+    background: linear-gradient(96deg, #00d0ff, #ff005e, #ff0000, #5e0000, #0ee2ff, #95ff0e, #ff0efa);
+    background-size: 1400% 1400%;
+
+    -webkit-animation: snake 2s ease infinite;
+    -moz-animation: snake 2s ease infinite;
+    animation: snake 2s ease infinite;
+}
+
+@-webkit-keyframes snake {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes snake {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes snake {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
